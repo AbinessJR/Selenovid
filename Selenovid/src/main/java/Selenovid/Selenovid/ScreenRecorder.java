@@ -52,6 +52,7 @@
              if (!dirFile.exists() && !dirFile.mkdirs()) {
                  throw new IllegalArgumentException("Failed to create output directory: " + dir);
              }
+             
              if (!dirFile.isDirectory()) {
                  throw new IllegalArgumentException("Output path is not a directory: " + dir);
              }
